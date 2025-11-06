@@ -18,7 +18,7 @@ model = init_chat_model(
     "qwen3-max",
     model_provider="openai",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-    api_key="sk-72fb5cc108ef4c52b08c549d25963bff"
+    api_key="sk-1234567890"
 )
 checkpointer = MemorySaver()
 
