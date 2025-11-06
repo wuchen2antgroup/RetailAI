@@ -9,11 +9,13 @@ from typing import Literal
 from langgraph.graph import StateGraph, START, END
 
 # 1. Define tools and model
+# 使用ollama
 # model = init_chat_model(
 #     model="qwen3:1.7b",
 #     model_provider="ollama",
 #     base_url="http://localhost:11434",
 # )
+# 使用qwen
 model = init_chat_model(
     "qwen3-max",
     model_provider="openai",
