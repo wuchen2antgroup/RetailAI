@@ -9,10 +9,16 @@ from typing import Literal
 from langgraph.graph import StateGraph, START, END
 
 # 1. Define tools and model
+# model = init_chat_model(
+#     model="qwen3:1.7b",
+#     model_provider="ollama",
+#     base_url="http://localhost:11434",
+# )
 model = init_chat_model(
-    model="qwen3:1.7b",
-    model_provider="ollama",
-    base_url="http://localhost:11434",
+    "qwen3-max",
+    model_provider="openai",
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="sk-72fb5cc108ef4c52b08c549d25963bff"
 )
 checkpointer = MemorySaver()
 
